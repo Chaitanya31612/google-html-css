@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <title>Advanced Search</title>
+</head>
+<body>
+    <header class="header__advanced">
+        <a href="index.html">
+            <img src="images/googlelogo_color_272x92dp.png" width="92px" alt="Google">
+        </a>
+        <a class="header header__link" href="index.html">Google Search</a>
+    </header>
+
+    <main class="main main--advanced">
+        <section class="section-advanced">
+            <div class="heading">
+                <div class="heading__text">
+                    Advanced Search
+                </div>
+            </div>
+
+            <form action="https://www.google.com/search" class="form-advanced">
+                <div class="heading__sub">
+                    <div class="heading__sub--1">Find pages with...</div>
+                    <div class="heading__sub--2">To do this in the search box</div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="1" class="form-advanced__label">all these words:</label>
+                        <input id="1" type="text" name="as_q" class="form-advanced__input" autofocus>
+                        <span class="form-advanced__span">Type the important words: tri-colour rat terrier</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="2" class="form-advanced__label">this exact word or phrase:</label>
+                        <input type="text" name="as_epq" id="2" class="form-advanced__input">
+                        <span class="form-advanced__span">Put exact words in quotes: "rat terrier"</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="3" class="form-advanced__label">any of these words:</label>
+                        <input type="text" name="as_oq" id="3" class="form-advanced__input">
+                        <span class="form-advanced__span">Type OR between all the words you want: miniature OR standard</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="4" class="form-advanced__label">none of these words:</label>
+                        <input type="text" name="as_eq" id="4" class="form-advanced__input">
+                        <span class="form-advanced__span">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+                        <br><br>
+                    </div>
+
+                    <div>
+                        <label for="5" class="form-advanced__label">numbers ranging from:</label>
+                        <input type="text" name="as_nlo" id="5" class="form-advanced__input form-advanced__input--1">
+                        <input type="text" name="as_nhi" class="form-advanced__input form-advanced__input--2">
+                        <span class="form-advanced__span">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</span>
+                    </div>
+                    
+                    <div class="form__button">
+                        <input class="form__button--advanced" type="submit" value="Advanced Search">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-top:-15px;margin-right:15px;text-align: right;" class="footer">&copy;Chaitanya Gupta</footer>
+</body>
+</html>

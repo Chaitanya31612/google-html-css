@@ -1,0 +1,97 @@
+.heading {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px 40px 35px;
+    border-bottom: 1px solid lighten($color-grey-light-3, 5%);
+
+    &__text {
+        margin-bottom: 1.7rem;
+    }
+}
+
+.heading__sub {
+    font-size: $default-font-size;
+    display: table;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.7rem;
+
+    &--1 {
+        width: 50%;
+        display: table-cell;
+        margin-left: 2rem;
+        color: $color-grey-dark-3;
+    }
+
+    &--2 {
+        width: 40%;
+        display: table-cell;
+        // text-align: center;
+    }
+}
+
+.form-advanced {
+    font-size: 1.3rem;
+    margin: 2.5rem 3.5rem;
+
+    &__label {
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        width: 16%;
+        color: $color-grey-dark-3;
+        vertical-align: middle;
+    }
+
+    &__input {
+        float: left;
+        padding-left: .45rem;
+        outline: none;
+        border: 1px solid $color-grey-light-3;
+        display: inline-block;
+        width: 14rem;
+        min-height: 2.7rem;
+        vertical-align: middle;
+        width: 40%;
+
+        @include respond(tab-port) {
+            width: 30%;
+            display: block;
+        }
+
+        &:focus {
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        &--1 {
+            width: 19.5%;
+            margin-right: 1.6rem;
+
+            @include respond(tab-port) {
+                width: 14.5%;
+                margin-right: 1.3rem;
+            }
+        }
+
+        &--2 {
+            width: 19.3%;
+
+            @include respond(tab-port) {
+                width: 14.3%;
+            }
+        }
+    }
+
+    &__span {
+        float: left;
+        display: inline-block;
+        width: 32%;
+        min-width: 160px;
+        margin: 0 0 8px 1%;
+        color: #555;
+        font-size: 11px;
+        padding-left: 5px;
+        vertical-align: middle;
+        position: relative;
+    }
+}

@@ -1,0 +1,38 @@
+.main {
+    height: 90vh;
+    width: 100%;
+
+    &--advanced {
+        height: 80vh;
+    }
+
+    .section {
+        &-home {
+            @include centerscreen;
+            top: 44%;
+        }
+
+        &-images {
+            @include centerscreen;
+            top: 35%;
+        }
+    }
+
+    .image__logo {
+        height: 9.2rem;
+        width: 27.2rem;
+        display: block;
+        margin: 3rem auto;
+        position: relative;
+
+        &--subtext {
+            font-size: 1.6rem;
+            color: #4285f4;
+            position: absolute;
+            right: 16rem;
+            top: 10rem;
+            white-space: nowrap;
+        }
+    }
+}
+

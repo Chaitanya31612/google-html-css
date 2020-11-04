@@ -1,0 +1,16 @@
+{
+  "name": "Search0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/style.scss css/style.css -w",
+    "compress:css": "node-sass css/style.css css/style.comp.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
