@@ -27,12 +27,22 @@
         width: 40%;
         display: table-cell;
         // text-align: center;
+
+        @include respond(tab-port) {
+            visibility: hidden;
+        }
     }
 }
 
 .form-advanced {
     font-size: 1.3rem;
     margin: 2.5rem 3.5rem;
+
+    @include respond(phone) {
+        transform: scale(0.8);
+        display: block;
+        word-wrap: normal;
+    }
 
     &__label {
         float: left;
@@ -93,5 +103,9 @@
         padding-left: 5px;
         vertical-align: middle;
         position: relative;
+
+        @include respond(tab-port) {
+            visibility: hidden;
+        }
     }
 }

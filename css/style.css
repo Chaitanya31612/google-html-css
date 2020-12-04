@@ -133,7 +133,8 @@ body {
       min-width: 5.4rem;
       text-align: center;
       cursor: pointer;
-      user-select: none; }
+      user-select: none;
+      outline: none; }
       .form__button--1:hover {
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
@@ -257,10 +258,18 @@ body {
   .heading__sub--2 {
     width: 40%;
     display: table-cell; }
+    @media only screen and (max-width: 56.25em) {
+      .heading__sub--2 {
+        visibility: hidden; } }
 
 .form-advanced {
   font-size: 1.3rem;
   margin: 2.5rem 3.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form-advanced {
+      transform: scale(0.8);
+      display: block;
+      word-wrap: normal; } }
   .form-advanced__label {
     float: left;
     display: inline-block;
@@ -307,3 +316,6 @@ body {
     padding-left: 5px;
     vertical-align: middle;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .form-advanced__span {
+        visibility: hidden; } }
